@@ -20,10 +20,11 @@ function Home() {
             </div>
             <div className="home_footer">
                 <div className="home_footerLeft">
+                    <span>&nbsp;</span>
                     <Link to='/about'>About</Link>
                     <Link to='/Advertising'>Advertising</Link>
                     <Link to='/Business'>Business</Link>
-                    <Link to='/How Search Works'>How Search Works</Link>
+                    <Link to='/How Search Works'>How Search works</Link>
                 </div>
                 <div className="home_footerRight">
 
