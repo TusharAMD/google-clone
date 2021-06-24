@@ -1,8 +1,8 @@
 import React from 'react';
 import './Home.css';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import AppsIcon from "@material-ui/icons/Apps";
-import { Avatar} from "@material-ui/core";
+import { Avatar } from "@material-ui/core";
 import Search from './Search';
 
 function Home() {
@@ -10,12 +10,16 @@ function Home() {
         <div className='home'>
 
             <div className="home_header">
-            <Link to='/Gmail'>Gmail</Link>
-            <Link to='/Gmail'>Images</Link>
-            <AppsIcon />
-            <Avatar />
+                <Link to='/Gmail'>Gmail</Link>
+                <Link to='/Gmail'>Images</Link>
+                <AppsIcon />
+                <Avatar />
             </div>
-
+            <div class="home_footer1">
+                <div class="home_footerLeft">
+                    <a href="google.com/india" class="home_footer_link">India</a>
+                </div>
+            </div>
             <div className="home_footer">
                 <div className="home_footerLeft">
                     <Link to='/about'>About</Link>
@@ -24,14 +28,14 @@ function Home() {
                     <Link to='/How Search Works'>How Search Works</Link>
                 </div>
                 <div className="home_footerRight">
-                
-                <Link to='/Privacy'>Privacy</Link>
-                <Link to='/Terms'>Terms</Link>
-                <Link to='/Settings'>Settings</Link>
+
+                    <Link to='/Privacy'>Privacy</Link>
+                    <Link to='/Terms'>Terms</Link>
+                    <Link to='/Settings'>Settings</Link>
                 </div>
             </div>
             <div className="home_body">
-                <img src ="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" alt=""/>
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" alt="" />
             </div>
             <div className="home_inputContainer">
                 <Search />
