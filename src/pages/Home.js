@@ -16,9 +16,7 @@ function Home() {
                 <Avatar />
             </div>
             <div class="home_footer1">
-                <div class="home_footerLeft">
-                    <a href="google.com/india" class="home_footer_link">India</a>
-                </div>
+                <div class="home_footerLeftLink">India</div>
             </div>
             <div className="home_footer">
                 <div className="home_footerLeft">

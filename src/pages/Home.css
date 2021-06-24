@@ -37,8 +37,8 @@
 .home_footer a {
   margin-right: 20px;
   text-decoration: inherit;
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
 }
 
 .home_footer a:hover {
@@ -74,12 +74,12 @@
   object-fit: contain;
   height: 92px;
 }
-.home_inputContainer {
-}
 
-.home_footer_link {
+.home_footerLeftLink {
+  position: fixed;
+  align-items: center;
   text-decoration: none;
-  color: grey;
+  color: rgba(0, 0, 0, 0.54);
   font-family: arial, sans-serif;
   font-size: 14px;
 }
