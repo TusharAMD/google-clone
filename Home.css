@@ -100,15 +100,17 @@ align-items: center;
 .home_inputContainer{
     
 }
-@media screen and (max-width: 600px)
+@media screen and (max-width :618px)
 {
-    .home_body 
-    {
-        max-width:350px;
-        margin-top: 140px;
-        margin-left: 30px;
-    }
     .home_footer{
-        display: none;
+        flex-direction: column;
+    }
+    .home_footerRight{
+
+        left:20%;
+        display: flex;
+        justify-content: flex-start;
+        
     }
 }
+
