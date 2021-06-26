@@ -9,11 +9,11 @@
   display: flex;
   right: 0;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 10px 20px;
   align-items: center;
 }
 
-.home_footer {
+.home_footer2 {
   /* position: fixed;
     bottom: 0;
     height: 20px;
@@ -39,14 +39,14 @@
 
 .home_footerLeft {
   /* position: fixed;
-  align-items: center; */
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.home_footer a {
+.home_footer2 a {
   /* margin-right: 30px;
   text-decoration: inherit;
   color: rgba(0, 0, 0, 0.54);
@@ -58,7 +58,7 @@
   text-decoration: none;
 }
 
-.home_footer a:hover {
+.home_footer2 a:hover {
   text-decoration: underline;
 }
 
@@ -67,18 +67,18 @@
   right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px; */
-  justify-content: space-evenly;
+  padding: 20px 0px; 
+  justify-content: space-evenly;*/
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .home_header a {
-  margin-right: 20px;
+  margin-left: 20px;
   text-decoration: inherit;
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 15px;
+  color: hsla(0, 0%, 0%, 0.87);
+  font-size: 13px;
 }
 .home_header a:hover {
   text-decoration: underline;
@@ -106,14 +106,54 @@
 }
 
 .home_footer1 {
-  border-bottom: 1px solid #dadce0;
+  /* border-bottom: 1px solid #dadce0; */
   position: fixed;
   bottom: 47px;
-  height: 20px;
+  /*  height: 20px;*/
   width: 100%;
-  display: flex;
+  /*  display: flex;
   justify-content: space-between;
   padding: 15px 30px;
-  align-items: center;
+  align-items: center;*/
   background-color: rgb(241, 241, 241);
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+  display: flex;
+}
+.home_footer {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.MuiSvgIcon-root > path {
+  fill: #9aa0a6;
+}
+
+.home_header > svg {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+@media screen and (max-width: 640px) {
+  .home_body {
+    max-width: 350px;
+    margin-top: 140px;
+    margin-left: 20px;
+  }
+  .home_body > img {
+    height: 74px;
+  }
+  .home_footer {
+    visibility: hidden;
+  }
+  .home_footerLeft {
+    flex: content;
+  }
+  .home_footerRight {
+    flex: content;
+  }
+  .home_footer1 {
+    bottom: 94px;
+  }
 }

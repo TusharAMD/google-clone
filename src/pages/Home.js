@@ -15,22 +15,21 @@ function Home() {
                 <AppsIcon />
                 <Avatar />
             </div>
-            <div class="home_footer1">
-                <div class="home_footerLeftLink">India</div>
-            </div>
             <div className="home_footer">
-                <div className="home_footerLeft">
-                    <span>&nbsp;</span>
-                    <Link to='/about'>About</Link>
-                    <Link to='/Advertising'>Advertising</Link>
-                    <Link to='/Business'>Business</Link>
-                    <Link to='/How Search Works'>How Search works</Link>
-                </div>
-                <div className="home_footerRight">
+                <div class="home_footer1">India</div>
+                <div className="home_footer2">
+                    <div className="home_footerLeft">
+                        <span>&nbsp;</span>
+                        <Link to='/about'>About</Link>
+                        <Link to='/Advertising'>Advertising</Link>
+                        <Link to='/Business'>Business</Link>
+                    </div>
+                    <div className="home_footerRight">
 
-                    <Link to='/Privacy'>Privacy</Link>
-                    <Link to='/Terms'>Terms</Link>
-                    <Link to='/Settings'>Settings</Link>
+                        <Link to='/Privacy'>Privacy</Link>
+                        <Link to='/Terms'>Terms</Link>
+                        <Link to='/Settings'>Settings</Link>
+                    </div>
                 </div>
             </div>
             <div className="home_body">
