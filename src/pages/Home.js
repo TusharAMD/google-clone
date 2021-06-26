@@ -16,8 +16,8 @@ function Home() {
                 <Avatar />
             </div>
             <div className="home_footer">
-                <div class="home_footer1">India</div>
-                <div className="home_footer2">
+                <div class="home_upper_footer">India</div>
+                <div className="home_lower_footer">
                     <div className="home_footerLeft">
                         <span>&nbsp;</span>
                         <Link to='/about'>About</Link>
