@@ -1,116 +1,133 @@
-.home{
-    display:flex;
-    flex-direction: column;
-    height: 100vh;
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.home_header{
-    position: fixed;
-    display: flex;
-    right:0;
-    justify-content: space-around;
-    padding: 20px 30px;
-    align-items: center;
-    }
-.link2
-{
-    display: flex;
-    justify-content: space-around;
-}
-.appsicon
-{
-    border-radius:50px;
-}
-.appsicon:hover
-{
-    box-shadow:3px 5px 15px -5px rgba(0,0,0.3,0.2);
-    background-color: rgba(0,0,0.2,0.1);
-}
-.personicon
-{
-    border-radius: 100px;
-}
-.personicon:hover
-{
-    box-shadow:3px 5px 15px -5px rgba(0,0,0.3,0.2);
-    background-color: rgba(0,0,0.2,0.1);
+.home_header {
+  position: fixed;
+  display: flex;
+  right: 0;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
 }
 
-.home_footer{
-position: fixed;
-bottom: 0;
-height: 20px;
-width: 100%;
-display: flex;
-justify-content: space-between;
-padding: 20px 30px;
-align-items: center;
-background-color: rgb(241, 241, 241);
+.home_lower_footer {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(241, 241, 241);
+  padding: 0 20px;
+  position: fixed;
+  bottom: 0;
+  width: 97.5%;
 }
 
-.home_footerLeft{
-position: fixed;
-align-items: center;
-
+.home_footerMain {
+  position: fixed;
 }
 
-.home_footer a{
-    margin-right: 20px;
-    text-decoration: inherit;
-    color: rgba(0, 0, 0, 0.87);
-    font-size: 15px;
-
+.home_footerLeft {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.home_footer a:hover {
-    text-decoration: underline;
+.home_lower_footer a {
+  color: #70757a;
+  display: block;
+  padding: 15px;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
-.home_footerRight{
-    position: fixed;
-    right:0;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 30px;
+.home_lower_footers a:hover {
+  text-decoration: underline;
+}
 
-    }
+.home_footerRight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-.home_header a{
-    margin-right: 20px;
-    text-decoration: inherit;
-    color: rgba(0, 0, 0, 0.87);
-    font-size: 15px;
-
+.home_header a {
+  margin-left: 20px;
+  text-decoration: inherit;
+  color: hsla(0, 0%, 0%, 0.87);
+  font-size: 13px;
 }
 .home_header a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.home_body{
-    display: flex;
-    /*width: 100%;*/
+.home_body {
+  display: flex;
+  /*width: 100%;*/
 
-    margin-top: 10%;
-    flex-direction: column;
+  margin-top: 10%;
+  flex-direction: column;
 }
-.home_body > img{
-    object-fit: contain;
-    height: 100px;
-}
-.home_inputContainer{
-    
-}
-@media screen and (max-width :618px)
-{
-    .home_footer{
-        flex-direction: column;
-    }
-    .home_footerRight{
-
-        left:20%;
-        display: flex;
-        justify-content: flex-start;
-        
-    }
+.home_body > img {
+  object-fit: contain;
+  height: 92px;
 }
 
+.home_footerLeftLink {
+  position: fixed;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+  font-family: arial, sans-serif;
+  font-size: 15px;
+}
+
+.home_upper_footer {
+  position: fixed;
+  bottom: 47px;
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+  display: flex;
+}
+.home_footer {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.MuiSvgIcon-root > path {
+  fill: #808080;
+}
+
+.home_header > svg {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+@media screen and (max-width: 640px) {
+  .home_body {
+    max-width: 350px;
+    margin-top: 140px;
+    margin-left: 20px;
+    max-height: min-content;
+  }
+  .home_body > img {
+    height: 74px;
+  }
+  .home_footer {
+    visibility: hidden;
+  }
+  .home_footerLeft {
+    flex: content;
+  }
+  .home_footerRight {
+    flex: content;
+  }
+  .home_upper_footer {
+    bottom: 94px;
+  }
+}
