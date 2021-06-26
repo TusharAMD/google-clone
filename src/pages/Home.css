@@ -140,6 +140,7 @@
     max-width: 350px;
     margin-top: 140px;
     margin-left: 20px;
+    max-height: min-content;
   }
   .home_body > img {
     height: 74px;
