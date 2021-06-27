@@ -28,9 +28,9 @@ function Search() {
 
             <div className='search_buttons'>
             <ThemeProvider theme = {theme}>
-            <Button onClick={search} variant="contained" >Google Search</Button>
-            <Button variant="contained" >I'm Feeling Lucky</Button>
-            </ThemeProvider>
+                <Button type="submit" onClick={search} variant="outlined">Google Search</Button>
+                <Button variant="outlined" >I'm Feeling Lucky</Button>
+             </ThemeProvider>
             </div>
         </div>
     );
